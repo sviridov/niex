@@ -9,7 +9,7 @@ before_install:
 - unzip Precompiled.zip
 - export PATH="$PWD/bin:$PATH"
 - cd -
-- mix local.hex
+- echo Y | mix local.hex
 - mix deps.get
 script:
 - mix test

@@ -1,1 +1,2 @@
-%{"poison": {:package, "1.2.0"}}
+%{"poison": {:package, "1.2.0"},
+  "socket": {:package, "0.2.8"}}

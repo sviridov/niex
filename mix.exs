@@ -6,6 +6,7 @@ defmodule NIEx.Mixfile do
     [app: :niex,
      version: "0.0.1",
      elixir: ">= 1.0.0",
+     escript: escript,
      deps: deps,
      package: package,
      description: description]
@@ -13,6 +14,10 @@ defmodule NIEx.Mixfile do
 
   def application do
     []
+  end
+
+  def escript do
+    [main_module: NIEx.CLI]
   end
 
   defp deps do
